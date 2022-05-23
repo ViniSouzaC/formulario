@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Formulario de Serviço</h1>
+            <p id="subtitulo">Complete as informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Qual serviço a ser solicitado?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="?" checked>?
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="?">?
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="?">?
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Serviço</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>?</option>
+                  <option>?</option>
+                  <option>?</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione o tipo de serviço que deseja:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="">
+                    <label for="tecnologia1"> </label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="">
+                    <label for="tecnologia2"> </label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="">
+                    <label for="tecnologia3"> </label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="">
+                    <label for="tecnologia4"> </label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="">
+                    <label for="tecnologia5"> </label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="">
+                    <label for="tecnologia6"> </label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="">
+                    <label for="tecnologia7"> </label>
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais detalhes do seu evento: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
